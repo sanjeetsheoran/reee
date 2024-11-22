@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script>document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+    
+        // Dummy validation for demonstration
+        if (username === 'user' && password === 'pass') {
+            document.getElementById('message').innerText = 'Login successful!';
+            document.getElementById('message').style.color = 'green';
+            // Redirect or load the next page here
+        } else {
+            document.getElementById('message').innerText = 'Invalid username or password.';
+        }
+    });
+    </script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    height: 400px;
+    width:500px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#message {
+    margin-top: 15px;
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit"><a href="Homepage.html"> Login</a>  </button>
+            <p id="message"></p>
+        </form>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

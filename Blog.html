@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Market</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b7bbc;
+            /* background-color: transparent; */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #c4c1c0;
+            text-align: center;
+            /* background-color: transparent; */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('crypto_background.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .market-info {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .market-info h2 {
+            text-align: center;
+            color: #333;
+        }
+        .flow-chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .flow-chart img {
+            width: 80%;
+            height: auto;
+        }
+        .companies {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .company {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .company:hover {
+            transform: scale(1.05);
+        }
+        .company img {
+            width: 100px;
+            height: auto;
+        }
+        .company h3 {
+            margin-top: 10px;
+        }
+        .company p {
+            font-size: 16px;
+        }
+        footer {
+            background: #046d6e;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Crypto Market</h1>
+        </div>
+    </header>
+    <section class="showcase">
+        <div class="container">
+            <h1>Explore the Crypto Market</h1>
+            <p>Get the latest information and trends in the cryptocurrency market.</p>
+        </div>
+    </section>
+    <section class="market-info">
+        <div class="container">
+            <h2>Understanding the Crypto Market</h2>
+            <p>The cryptocurrency market is a decentralized digital marketplace where cryptocurrencies are traded. It operates 24/7 and is known for its volatility and rapid price changes. Key players in the market include exchanges, traders, and investors.</p>
+            <div class="flow-chart">
+                <img src="media/flow chart.png " alt="Crypto Market Flow Chart">
+            </div>
+        </div>
+    </section>
+    <section class="companies">
+        <div class="company">
+            <img src=" media/bitcoin.jpg" alt="Bitcoin">
+            <h3>Bitcoin</h3>
+            <p>Bitcoin is the first and most well-known cryptocurrency. It operates on a decentralized network using blockchain technology.</p>
+        </div>
+        <div class="company">
+            <img src=" media/ethernum.jpg" alt="Ethereum">
+            <h3>Ethereum</h3>
+            <p>Ethereum is a decentralized platform that enables smart contracts and decentralized applications (DApps) to be built and run without any downtime, fraud, control, or interference.</p>
+        </div>
+        <div class="company">
+            <img src="media/litecoin.jpg" alt="Litecoin">
+            <h3>Litecoin</h3>
+            <p>Litecoin is a peer-to-peer cryptocurrency that enables instant, near-zero cost payments to anyone in the world.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Crypto Market © 2024</p>
+    </footer>
+</body>
+</html>
